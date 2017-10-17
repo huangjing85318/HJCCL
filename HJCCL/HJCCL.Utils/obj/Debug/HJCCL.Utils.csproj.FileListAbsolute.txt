@@ -1,0 +1,4 @@
+D:\workspace\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Utils.dll
+D:\workspace\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Utils.pdb
+D:\workspace\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.dll
+D:\workspace\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.pdb
