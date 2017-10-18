@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\develop\Spider\Spider\bin\Debug\Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:\workspace\develop\Spider\Spider\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
