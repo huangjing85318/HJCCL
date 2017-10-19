@@ -10,6 +10,17 @@ namespace HJCCL.Utils
     public static class ConvertObject
     {
         /// <summary>
+        /// 对象转换成整型
+        /// </summary>
+        /// <param name="value">对象</param>
+        /// <returns></returns>
+        public static int ToInt(object value)
+        {
+            int res = 0;
+            res = value == null ? 0 : Convert.ToInt32(value);
+            return res;
+        }
+        /// <summary>
         /// 对象转换成字符串
         /// </summary>
         /// <param name="value">对象</param>
