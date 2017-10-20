@@ -8,3 +8,4 @@ F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Utils.pdb
 F:\github\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.dll
 F:\github\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.pdb
 F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\Newtonsoft.Json.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.csprojResolveAssemblyReference.cache
