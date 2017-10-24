@@ -5,10 +5,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace HJCCL.Utils
+namespace HJCCL.Services.Imp
 {
-   public static class Validate
+   public class ValidateRepository:IValidateRepository
     {
+        public IConvertObjectRepository _convertObjectRepository;
+
+        public ValidateRepository(IConvertObjectRepository convertObjectRepository) {
+            _convertObjectRepository = convertObjectRepository;
+        }
         /// <summary>
         /// 验证手机号码
         /// 移动:139,138,137,136,135,134,147,150,151,152,157,158,159,178,182,183,184,187,188  
@@ -18,12 +23,12 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static bool IsMobileNumber(string value)
+        public  bool IsMobileNumber(string value)
         {
             bool res = false;
             string reg = @"^(0|86|17951)?(13[0-9]|15[012356789]|17[013678]|18[0-9]|14[57])[0-9]{8}$";
             Regex rx = new Regex(reg);
-            if (rx.IsMatch(value)) 
+            if (rx.IsMatch(value))
             {
                 res = true;
             }
@@ -34,12 +39,12 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static bool IsTelephone(string value)
+        public  bool IsTelephone(string value)
         {
             bool res = false;
             string reg = @"/^0?(13[0-9]|15[012356789]|17[013678]|18[0-9]|14[57])[0-9]{8}$/";
             Regex rx = new Regex(reg);
-            if (rx.IsMatch(value)) 
+            if (rx.IsMatch(value))
             {
                 res = true;
             }
@@ -50,12 +55,12 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static bool IsEmail(string value)
+        public  bool IsEmail(string value)
         {
             bool res = false;
             string reg = @"^\\s*([A-Za-z0-9_-]+(\\.\\w+)*@(\\w+\\.)+\\w{2,5})\\s*$";
             Regex rx = new Regex(reg);
-            if (rx.IsMatch(value)) 
+            if (rx.IsMatch(value))
             {
                 res = true;
             }
@@ -67,12 +72,12 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static bool IsZipCode(string value)
+        public  bool IsZipCode(string value)
         {
             bool res = false;
             string reg = @"^\d{6}$";
             Regex rx = new Regex(reg);
-            if (rx.IsMatch(value)) 
+            if (rx.IsMatch(value))
             {
                 res = true;
             }
@@ -82,7 +87,7 @@ namespace HJCCL.Utils
         /// 是否是图片文件名
         /// </summary>
         /// <returns> </returns>
-        public static bool IsImgFileName(string value)
+        public  bool IsImgFileName(string value)
         {
             if (value.IndexOf(".") == -1)
                 return false;
@@ -98,17 +103,17 @@ namespace HJCCL.Utils
         /// <param name="value1"></param>
         /// <param name="value2"></param>
         /// <returns></returns>
-        public static bool IsEqual(object value1,object value2)
+        public  bool IsEqual(object value1, object value2)
         {
             bool res = false;
-            if (ConvertObject.ToDecimal(value1)> 0 && ConvertObject.ToDecimal(value2)> 0)
+            if (_convertObjectRepository.ToDecimal(value1) > 0 && _convertObjectRepository.ToDecimal(value2) > 0)
             {
-                if (ConvertObject.ToDecimal(value1)==ConvertObject.ToDecimal(value2))
+                if (_convertObjectRepository.ToDecimal(value1) == _convertObjectRepository.ToDecimal(value2))
                     res = true;
             }
-            else if (ConvertObject.ToString(value1).Length > 0 && ConvertObject.ToString(value2).Length > 0)
+            else if (_convertObjectRepository.ToString(value1).Length > 0 && _convertObjectRepository.ToString(value2).Length > 0)
             {
-                if (ConvertObject.ToString(value1).Equals(ConvertObject.ToString(value2)))
+                if (_convertObjectRepository.ToString(value1).Equals(_convertObjectRepository.ToString(value2)))
                     res = true;
             }
             return res;

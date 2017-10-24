@@ -5,16 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HJCCL.Utils
+namespace HJCCL.Services
 {
-    public static class ConvertObject
+    public class ConvertObject : IConvertObjectRepository
     {
         /// <summary>
         /// 对象转换成整型
         /// </summary>
         /// <param name="value">对象</param>
         /// <returns></returns>
-        public static int ToInt(object value)
+        public int ToInt(object value)
         {
             int res = 0;
             res = value == null ? 0 : Convert.ToInt32(value);
@@ -25,7 +25,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value">对象</param>
         /// <returns></returns>
-        public static string ToString(object value)
+        public  string ToString(object value)
         {
             string res = "";
             res = value == null ? String.Empty : value.ToString();
@@ -37,7 +37,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value">对象</param>
         /// <returns></returns>
-        public static DateTime ToDateTime(object value)
+        public  DateTime ToDateTime(object value)
         {
             DateTime res=DateTime.Now;
             try
@@ -63,7 +63,7 @@ namespace HJCCL.Utils
         /// <param name="endPage">endIndex</param>
         /// <param name="pageSize">表格分页记录数</param>
         /// <returns></returns>
-        public static DataTable GetPagedTable(DataTable dt, int beginPage, int endPage, int pageSize)
+        public  DataTable GetPagedTable(DataTable dt, int beginPage, int endPage, int pageSize)
         {
             if (beginPage == 0)
                 return dt;//0页代表每页数据，直接返回
@@ -97,7 +97,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value">对象</param>
         /// <returns></returns>
-        public static string SafeStringModel(object value)
+        public  string SafeStringModel(object value)
         {
             string res = "";
             try
@@ -120,7 +120,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static string AccountFormat(object value)
+        public  string AccountFormat(object value)
         {
             decimal d = ToDecimal(value);
             if (d == 1)
@@ -133,7 +133,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static decimal ToDecimal(object value)
+        public  decimal ToDecimal(object value)
         {
             decimal dec = 0;
             try
@@ -152,7 +152,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
-        public static double ToDouble(object value)
+        public  double ToDouble(object value)
         {
             double dec = 0;
             try
@@ -170,7 +170,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static DateTime ToExcelDate(object value)
+        public  DateTime ToExcelDate(object value)
         {
             TimeSpan res = new TimeSpan(Convert.ToInt32(value) - 2, 0, 0, 0);
             DateTime d = new DateTime(1900, 1, 1).Add(res);
@@ -182,7 +182,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static string ToDateStringEn(object value)
+        public  string ToDateStringEn(object value)
         {
             string res = "";
             try
@@ -201,7 +201,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static string ToDateStringZh(object value)
+        public  string ToDateStringZh(object value)
         {
             string res = "";
             try
@@ -220,7 +220,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static string ToDateTimeStringEn(object value)
+        public  string ToDateTimeStringEn(object value)
         {
             string res = "";
             try
@@ -239,7 +239,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="o"></param>
         /// <returns></returns>
-        public static string ToDateTimeStringZh(object value)
+        public  string ToDateTimeStringZh(object value)
         {
             string res = "";
             try
@@ -257,7 +257,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static string ToTimeStr(object value)
+        public  string ToTimeStr(object value)
         {
             string s = "";
             try

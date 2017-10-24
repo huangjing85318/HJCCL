@@ -1,24 +1,29 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web;
 
-
-namespace HJCCL.Utils
+namespace HJCCL.Services.Imp
 {
-    public static class WriteToJson
+    public class WriteToJsonRepository:IWriteToJsonRepository
     {
+        public IConvertObjectRepository _convertObjectRepository;
 
+        public WriteToJsonRepository(IConvertObjectRepository convertObjectRepository)
+        {
+            _convertObjectRepository = convertObjectRepository;
+        }
         #region Write Json
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="result">json format</param>
-        public static void WriteJson(string result)
+        public  void WriteJson(string result)
         {
             HttpContext.Current.Response.Clear();
             HttpContext.Current.Response.ContentType = "application/json";
@@ -31,7 +36,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">string format</param>
         /// <param name="result">json format</param>
-        public static void WriteJson(string status, string result)
+        public  void WriteJson(string status, string result)
         {
             string temp = "{\"status\":\"" + status + "\",\"context\":" + result + "}";
             WriteJson(temp);
@@ -43,12 +48,12 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">int format</param>
         /// <param name="result">json format</param>
-        //public static void WriteJson(int status, string result)
+        //public  void WriteJson(int status, string result)
         //{
         //    string temp = "{\"status\":\"" + status + "\",\"context\":" + result + "}";
         //    WriteJson(temp);
         //}
-        public static void WriteJson(int status, string result)
+        public  void WriteJson(int status, string result)
         {
             string temp = "{" + result + "}";
             WriteJson(temp);
@@ -59,7 +64,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">bool format</param>
         /// <param name="result">json format</param>
-        public static void WriteJson(bool status, string result)
+        public  void WriteJson(bool status, string result)
         {
             string i = "0";
             if (status) { i = "1"; }
@@ -70,9 +75,9 @@ namespace HJCCL.Utils
 
         #region Write Jsonp
 
-        public static void WriteJsonP(string result)
+        public  void WriteJsonP(string result)
         {
-            string callback = ConvertObject.ToString(HttpContext.Current.Request.Params["callback"]);
+            string callback = _convertObjectRepository.ToString(HttpContext.Current.Request.Params["callback"]);
             string re_value = callback + "({result:" + result + "})";
             HttpContext.Current.Response.Write(re_value);
             HttpContext.Current.Response.End();
@@ -83,7 +88,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">string format</param>
         /// <param name="result">json format</param>
-        public static void WriteJsonP(string status, string result)
+        public  void WriteJsonP(string status, string result)
         {
             string temp = "{status:'" + status + "',context:" + result + "}";
             WriteJsonP(temp);
@@ -94,7 +99,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">string format</param>
         /// <param name="result">json format</param>
-        public static void WriteJsonP(int status, string result)
+        public  void WriteJsonP(int status, string result)
         {
             string temp = "{status:'" + status + "',context:" + result + "}";
             WriteJsonP(temp);
@@ -104,7 +109,7 @@ namespace HJCCL.Utils
         /// </summary>
         /// <param name="status">string format</param>
         /// <param name="result">json format</param>
-        public static void WriteJsonP(bool status, string result)
+        public  void WriteJsonP(bool status, string result)
         {
             string i = "0";
             if (status) { i = "1"; }
@@ -113,16 +118,16 @@ namespace HJCCL.Utils
         }
         #endregion
 
-        public static string StringToJson(string par)
+        public  string StringToJson(string par)
         {
             return ObjectToJson(par);
         }
 
-        static string DelComma_AddBracket(string par)
+        public string DelComma_AddBracket(string par)
         {
             return DelComma_AddBracket(par, false);
         }
-        static string DelComma_AddBracket(string par, bool IsSquare)
+        public string DelComma_AddBracket(string par, bool IsSquare)
         {
             string result = par;
             if (result.EndsWith(","))
@@ -141,7 +146,7 @@ namespace HJCCL.Utils
         }
 
 
-        public static string Json2_Replace(string par)
+        public  string Json2_Replace(string par)
         {
             string result = par;
             result = result.Replace("!AND!", "&");
@@ -154,14 +159,14 @@ namespace HJCCL.Utils
         }
 
 
-        public static string Json2_SafeValue(string par)
+        public  string Json2_SafeValue(string par)
         {
             string result = par;
             result = result.Replace("\"", "\\\"");
             return result;
         }
 
-       public static List<IDictionary<string, string>> Json2Data(string par)
+        public  List<IDictionary<string, string>> Json2Data(string par)
         {
             string par_temp = Json2_Replace(par);
             List<IDictionary<string, string>> list = new List<IDictionary<string, string>>();
@@ -171,7 +176,7 @@ namespace HJCCL.Utils
             return list;
         }
 
-        static void Json2Data_part(string par, List<IDictionary<string, string>> list)
+        public void Json2Data_part(string par, List<IDictionary<string, string>> list)
         {
             int end = par.IndexOf("}");
             int begin = par.IndexOf("{");
@@ -193,7 +198,7 @@ namespace HJCCL.Utils
 
         }
 
-        static IDictionary<string, string> Json2Data_part2(string par)
+        public IDictionary<string, string> Json2Data_part2(string par)
         {
             IDictionary<string, string> ht = new Dictionary<string, string>();
             string[] temp = par.Split('\'');
@@ -204,36 +209,36 @@ namespace HJCCL.Utils
             return ht;
         }
 
-       public static  string ClassToJson<T>(T t)
+        public  string ClassToJson<T>(T t)
         {
             string result = "";
             Type type = typeof(T);
             foreach (System.Reflection.PropertyInfo info in type.GetProperties())
             {
                 if (info.PropertyType.IsValueType || info.PropertyType.Name.StartsWith("String"))
-                    result += info.Name + ":\"" +ConvertObject.ToString(info.GetValue(t, null)) + "\",";
+                    result += info.Name + ":\"" + _convertObjectRepository.ToString(info.GetValue(t, null)) + "\",";
             }
             result = DelComma_AddBracket(result);
             return result;
         }
-        public static string ObjectToJson(object obj)
+        public  string ObjectToJson(object obj)
         {
             return JsonConvert.SerializeObject(obj);
         }
 
-        public static string DataTableToJson(DataTable dt)
+        public  string DataTableToJson(DataTable dt)
         {
             return ObjectToJson(dt);
         }
 
-        public static string DataRowToJson(DataTable dt)
+        public  string DataRowToJson(DataTable dt)
         {
             string re = ObjectToJson(dt);
             re = re.Substring(1, re.Length - 2);
             return re;
         }
 
-        public static string DataRowToJson(DataTable dt, bool isGetColName)
+        public  string DataRowToJson(DataTable dt, bool isGetColName)
         {
             string result = "";
             if (dt.Rows.Count > 0)
