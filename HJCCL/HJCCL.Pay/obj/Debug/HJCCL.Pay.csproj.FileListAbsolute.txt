@@ -3,3 +3,8 @@ F:\github\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.pdb
 F:\github\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.csprojResolveAssemblyReference.cache
 F:\github\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.dll
 F:\github\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.dll
+F:\github\HJCCL\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.dll
+F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.csprojResolveAssemblyReference.cache

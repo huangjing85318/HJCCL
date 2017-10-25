@@ -16,3 +16,11 @@ F:\github\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.pdb
 F:\github\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.csprojResolveAssemblyReference.cache
 F:\github\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Services.dll
 F:\github\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Services.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Services.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\HJCCL.Services.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.OOXML.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.OpenXml4Net.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.OpenXmlFormats.dll
+F:\github\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.xml

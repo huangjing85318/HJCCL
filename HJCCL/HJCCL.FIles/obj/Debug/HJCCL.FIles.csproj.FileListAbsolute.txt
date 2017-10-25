@@ -1,5 +1,0 @@
-F:\github\HJCCL\HJCCL.FIles\bin\Debug\HJCCL.FIles.dll
-F:\github\HJCCL\HJCCL.FIles\bin\Debug\HJCCL.FIles.pdb
-F:\github\HJCCL\HJCCL.FIles\obj\Debug\HJCCL.FIles.csprojResolveAssemblyReference.cache
-F:\github\HJCCL\HJCCL.FIles\obj\Debug\HJCCL.FIles.dll
-F:\github\HJCCL\HJCCL.FIles\obj\Debug\HJCCL.FIles.pdb

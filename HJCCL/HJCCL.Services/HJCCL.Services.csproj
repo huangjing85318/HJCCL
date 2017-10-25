@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\HJCCL.Utils\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -45,12 +49,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IConvertObjectRepository.cs" />
-    <Compile Include="Imp\ConvertObjectRepository.cs" />
-    <Compile Include="Imp\ValidateRepository.cs" />
-    <Compile Include="Imp\WriteToJsonRepository.cs" />
+    <Compile Include="IEnumerableFileExtensions.cs" />
+    <Compile Include="Impl\ConvertObjectRepository.cs" />
+    <Compile Include="Impl\SysControlRepository.cs" />
+    <Compile Include="Impl\ValidateRepository.cs" />
+    <Compile Include="Impl\WriteToJsonRepository.cs" />
+    <Compile Include="ISysControlRepository.cs" />
     <Compile Include="IValidateRepository.cs" />
     <Compile Include="IWriteToJsonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
