@@ -41,9 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AliPay.cs" />
-    <Compile Include="MiPay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnionPay.cs" />
     <Compile Include="WechatPay.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
