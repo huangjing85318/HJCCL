@@ -40,3 +40,5 @@ F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\bin\Debug\NPOI.xml
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.csprojResolveAssemblyReference.cache
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.pdb
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.Properties.Resources.resources
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Utils\obj\Debug\HJCCL.Utils.csproj.GenerateResource.Cache
