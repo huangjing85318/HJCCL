@@ -64,11 +64,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\NpoiColumnAttribute.cs" />
+    <Compile Include="Attributes\NpoiFilterAttribute.cs" />
+    <Compile Include="Attributes\NpoiFreezeAttribute.cs" />
+    <Compile Include="Attributes\NpoiStatisticsAttribute.cs" />
+    <Compile Include="Common\EnumUtil.cs" />
+    <Compile Include="Config\FluentConfiguration.cs" />
+    <Compile Include="Extensions\ConvertExtensions.cs" />
+    <Compile Include="Extensions\ICellExtensions.cs" />
+    <Compile Include="Extensions\ICellStyleExtensions.cs" />
+    <Compile Include="Extensions\IFontExtensions.cs" />
+    <Compile Include="Extensions\IRowExtensions.cs" />
+    <Compile Include="Extensions\ISheetExtensions.cs" />
+    <Compile Include="Extensions\IWorkbookExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Internal\CellConfig.cs" />
+    <Compile Include="Config\IFluentConfiguration.cs" />
+    <Compile Include="Config\PropertyConfiguration.cs" />
     <Compile Include="Const.cs" />
     <Compile Include="ConvertObject.cs" />
+    <Compile Include="Npoi\Excel.cs" />
     <Compile Include="Extensions\IEnumerableNpoiExtensions.cs" />
     <Compile Include="FileControl.cs" />
+    <Compile Include="Internal\FilterConfig.cs" />
+    <Compile Include="Internal\FreezeConfig.cs" />
+    <Compile Include="Internal\StatisticsConfig.cs" />
+    <Compile Include="Npoi\ExcelSetting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection.cs" />
     <Compile Include="SysControl.cs" />
     <Compile Include="Upload.cs" />
     <Compile Include="Validate.cs" />

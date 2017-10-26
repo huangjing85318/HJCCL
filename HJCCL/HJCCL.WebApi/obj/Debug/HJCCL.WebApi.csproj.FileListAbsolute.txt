@@ -119,3 +119,6 @@ F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\bin\zh-Hans\Microsoft.Owin.Security.M
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\bin\zh-Hans\System.Web.Http.Owin.resources.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\obj\Debug\HJCCL.WebApi.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\obj\Debug\HJCCL.WebApi.pdb
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\bin\NPOI.OOXML.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\bin\NPOI.OpenXmlFormats.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.WebApi\bin\NPOI.OpenXml4Net.dll

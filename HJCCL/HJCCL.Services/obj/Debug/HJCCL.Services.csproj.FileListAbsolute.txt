@@ -14,7 +14,7 @@ F:\github\HJCCL\HJCCL\HJCCL.Services\bin\Debug\ICSharpCode.SharpZipLib.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\bin\Debug\HJCCL.Services.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\bin\Debug\HJCCL.Services.pdb
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\bin\Debug\ICSharpCode.SharpZipLib.dll
-F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\obj\Debug\HJCCL.Services.csprojResolveAssemblyReference.cache
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\obj\Debug\HJCCL.Services.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\obj\Debug\HJCCL.Services.pdb
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\bin\Debug\Newtonsoft.Json.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Services\obj\Debug\HJCCL.Services.csprojResolveAssemblyReference.cache
