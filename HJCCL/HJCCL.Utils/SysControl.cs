@@ -1,16 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web;
-
+using System.Web.Configuration;
+using HJCCL.Utils.Common;
 
 namespace HJCCL.Utils
 {
     public class SysControl
     {
+        #region GetAppSettings(获取AppSettings)
+        /// <summary>
+        /// 获取AppSettings
+        /// </summary>
+        /// <param name="key">键名</param>
+        /// <returns></returns>
+        public static string GetAppSettings(string key)
+        {
+            key.CheckNotNull("key");
+            return ConfigurationManager.AppSettings[key];
+        }
+        #endregion
+
         #region GetType(获取类型)
         /// <summary>
         /// 获取类型,对可空类型进行处理
