@@ -48,15 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IConvertObjectRepository.cs" />
-    <Compile Include="IEnumerableFileExtensions.cs" />
-    <Compile Include="Impl\ConvertObjectRepository.cs" />
-    <Compile Include="Impl\SysControlRepository.cs" />
-    <Compile Include="Impl\ValidateRepository.cs" />
-    <Compile Include="Impl\WriteToJsonRepository.cs" />
-    <Compile Include="ISysControlRepository.cs" />
-    <Compile Include="IValidateRepository.cs" />
-    <Compile Include="IWriteToJsonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

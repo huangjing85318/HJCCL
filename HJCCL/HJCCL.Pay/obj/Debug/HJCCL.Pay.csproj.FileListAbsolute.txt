@@ -8,3 +8,7 @@ F:\github\HJCCL\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.pdb
 F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.dll
 F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.pdb
 F:\github\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.csprojResolveAssemblyReference.cache
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\bin\Debug\HJCCL.Pay.pdb
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\obj\Debug\HJCCL.Pay.pdb

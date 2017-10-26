@@ -1,0 +1,8 @@
+F:\github\HJCCL\HJCCL\HJCCL.Domain\bin\Debug\HJCCL.Domain.dll
+F:\github\HJCCL\HJCCL\HJCCL.Domain\bin\Debug\HJCCL.Domain.pdb
+F:\github\HJCCL\HJCCL\HJCCL.Domain\obj\Debug\HJCCL.Domain.dll
+F:\github\HJCCL\HJCCL\HJCCL.Domain\obj\Debug\HJCCL.Domain.pdb
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\bin\Debug\HJCCL.Domain.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\bin\Debug\HJCCL.Domain.pdb
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\obj\Debug\HJCCL.Domain.dll
+F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\obj\Debug\HJCCL.Domain.pdb
