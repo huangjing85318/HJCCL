@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HJCCL.Pay
 {
-    public class Class1
+    class UnionPay
     {
     }
 }
