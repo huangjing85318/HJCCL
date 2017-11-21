@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HJCCL.Utils">
+      <HintPath>..\HJCCL.Utils\bin\Release\HJCCL.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
       <Private>True</Private>
@@ -38,6 +41,7 @@
       <HintPath>..\HJCCL.Utils\bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -51,6 +55,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlBuilder\SqlOperator.cs" />
     <Compile Include="SqlBuilder\WhereCondition.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="SqlResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

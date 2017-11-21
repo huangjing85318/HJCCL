@@ -31,6 +31,12 @@ namespace HJCCL.Services.SqlBuilder
         /// <summary>
         /// 不等于
         /// </summary>
+        [Description("大于")]
+        GreaterThan,
+
+        /// <summary>
+        /// 不等于
+        /// </summary>
         [Description("大于等于")]
         GreaterThanEqual,
 
