@@ -2,4 +2,3 @@ F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\bin\Release\HJCCL.Domain.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\bin\Release\HJCCL.Domain.pdb
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\obj\Release\HJCCL.Domain.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\obj\Release\HJCCL.Domain.pdb
-F:\huangjing85318\HJCCL\HJCCL\HJCCL.Domain\obj\Release\HJCCL.Domain.csprojResolveAssemblyReference.cache

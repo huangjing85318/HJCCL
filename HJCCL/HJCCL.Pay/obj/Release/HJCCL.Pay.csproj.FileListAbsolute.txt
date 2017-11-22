@@ -1,5 +1,4 @@
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\bin\Release\HJCCL.Pay.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\bin\Release\HJCCL.Pay.pdb
-F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\obj\Release\HJCCL.Pay.csprojResolveAssemblyReference.cache
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\obj\Release\HJCCL.Pay.dll
 F:\huangjing85318\HJCCL\HJCCL\HJCCL.Pay\obj\Release\HJCCL.Pay.pdb
